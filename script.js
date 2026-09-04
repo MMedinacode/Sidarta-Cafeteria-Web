@@ -273,6 +273,13 @@ document.getElementById('menu-toggle').addEventListener('click', ()=>{
   document.getElementById('main-nav').classList.toggle('open');
 });
 
+document.getElementById('hero-contest-btn').addEventListener('click', ()=>{
+  goToTab('visitanos');
+  setTimeout(()=>{
+    document.querySelector('.contest-card').scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }, 350);
+});
+
 document.querySelector('.tab-panel.active').querySelectorAll('.fade-up').forEach(el=> revealObserver.observe(el));
 
 renderFilters();
