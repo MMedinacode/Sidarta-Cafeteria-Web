@@ -14,7 +14,7 @@
   .tracker{ letter-spacing:.18em; }
   .tracker-lg{ letter-spacing:.3em; }
 
-  #site-header{ background-color: rgba(247,242,231,0.94); backdrop-filter: blur(10px); box-shadow: 0 1px 0 var(--line); }
+  #site-header{ background-color: #10142B; --ink: var(--bg); color: var(--bg); backdrop-filter: blur(10px); box-shadow: 0 1px 0 rgba(247,242,231,0.1); }
 
   /* ===================== TAB PANELS (SPA) ===================== */
   .tab-panel{ display:none; animation: fadeInPanel .5s ease; }
@@ -31,7 +31,7 @@
   .menu-toggle{ color:var(--ink); }
   .main-nav.open{
     display:flex !important; position:fixed; top:70px; left:0; right:0; z-index:39;
-    background:var(--bg); flex-direction:column; align-items:flex-start; gap:0;
+    background:var(--bg); color:#10142B; flex-direction:column; align-items:flex-start; gap:0;
     padding:8px 0; box-shadow:0 1px 0 var(--line);
   }
   .main-nav.open .nav-link{ width:100%; padding:16px 24px; border-top:1px solid var(--line); }
