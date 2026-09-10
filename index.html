@@ -299,11 +299,15 @@
 
     <div class="fade-up">
       <div class="relative w-full h-[300px] mb-6 rounded-2xl overflow-hidden shadow-2xl">
+        <!-- Embed REAL de la ficha de Sidarta en Google Maps (Compartir →
+             "Incorporar un mapa", 09-09-2026): marca el pin del negocio, no
+             solo la dirección como hacía el iframe genérico anterior. -->
         <iframe
-          src="https://www.google.com/maps?q=Calle+Centenario+46+Local+2,+Maipu,+Santiago,+Chile&output=embed"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3327.053529534345!2d-70.7584025!3d-33.49998439999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c36bfd25c421%3A0xbc08c25b948cc374!2sCaf%C3%A9%20astrologico%20SIDARTA!5e0!3m2!1ses-419!2scl!4v1789005166579!5m2!1ses-419!2scl"
           class="w-full h-full border-0"
           loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen
+          referrerpolicy="strict-origin-when-cross-origin"
           title="Ubicación de Cafetería Astrológica Sidarta en Google Maps">
         </iframe>
         <!-- Tarjeta flotante estilo Google Maps, según preferencia guardada para estos prototipos -->
