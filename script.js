@@ -273,10 +273,13 @@ document.getElementById('menu-toggle').addEventListener('click', ()=>{
   document.getElementById('main-nav').classList.toggle('open');
 });
 
-document.getElementById('hero-contest-btn').addEventListener('click', ()=>{
+// El botón del concurso se retiró el 13-10-2026; si vuelve a haber uno, esto lo conecta solo.
+const contestBtn = document.getElementById('hero-contest-btn');
+if (contestBtn) contestBtn.addEventListener('click', ()=>{
   goToTab('visitanos');
   setTimeout(()=>{
-    document.querySelector('.contest-card').scrollIntoView({ behavior: 'smooth', block: 'center' });
+    const card = document.querySelector('.contest-card');
+    if (card) card.scrollIntoView({ behavior: 'smooth', block: 'center' });
   }, 350);
 });
 
